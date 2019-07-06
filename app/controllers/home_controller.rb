@@ -1,8 +1,8 @@
 class HomeController < ApplicationController
   # Rails provides a hash with the name cookies[]
   def set_cookies
-    cookies[:user_name] = "Smith"
-    cookies[:customes_number] = "1234567890"
+    cookies.permanent[:user_name] = "Smith"
+    cookies.permanent[:customes_number] = "1234567890"
   end
 
   def show_cookies
